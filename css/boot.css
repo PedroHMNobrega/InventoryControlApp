@@ -1,0 +1,109 @@
+/** Reset **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+input,textarea {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    resize: none;
+	overflow-y:auto;
+}
+
+input[type=text]:focus,input[type=password]:focus,textarea:focus,select:focus,input[type=email],
+input[type=submit], a:focus{
+    outline: 0;
+}
+
+
+
+/** Boot CSS **/
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w33 {
+    width: 33.3%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.titulo {
+    color: #444;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/** CallBack Formulario **/
+.alert {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 99999;
+}
+
+.alert i {
+    color: white !important;
+    font-size: 18px !important;
+    margin-right: 5px;
+}
+
+.alert a {
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.a-sucesso {
+    background-color: #05974e;
+}
+
+.a-erro {
+    background-color: #e75132;
+}
+
+.a-atencao {
+    background-color: #faac27;
+}
+/**************/
+/*****/

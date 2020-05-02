@@ -1,0 +1,7 @@
+Paleta de Cor:
+    - #f5cf94
+    - #da8db6
+    - #67b6b4
+    - #a7aed8
+    - #b1bb86
+    - #e4aec6

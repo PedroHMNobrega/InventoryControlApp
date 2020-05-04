@@ -29,8 +29,8 @@
         </div><!--buscar-->
         <div class="produtos">
             <form action="" method="GET" class="switch">
-                <input type="submit" name='disponivel' value="Produtos Disponíveis">
-                <input type="submit" name='falta' value="Produtos Faltando">
+                <input type="submit" name='disponivel' value="Produtos Disponíveis" <?php if(!isset($_GET['falta'])) echo 'class="active-swtc"' ?>>
+                <input type="submit" name='falta' value="Produtos Faltando" <?php if(isset($_GET['falta'])) echo 'class="active-swtc"' ?><?php if(isset($_GET['falta'])) echo 'class="active-swtc"' ?>>
             </form>
             <?php if(isset($_GET['falta'])) { ?>
                 <h3 class="titulo2">Produtos Faltando</h3>

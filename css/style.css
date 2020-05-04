@@ -194,7 +194,7 @@ th, td {
 .switch input {
     width: 50%;
     height: 50px;
-    background-color: #da8db6;
+    background-color: #e4aec6;
     color: white;
     border: none;
     cursor: pointer;
@@ -202,16 +202,24 @@ th, td {
 }
 
 .switch input:hover {
+    background-color: #e69fbe;
+}
+
+.switch .active-swtc {
+    background-color: #da8db6;
+}
+
+.switch .active-swtc:hover {
     background-color: #e079b0;
 }
 
-.switch input[name=falta] {
+/* .switch input[name=falta] {
     background-color: #e4aec6;
 }
 
 .switch input[name=falta]:hover {
     background-color: #e69fbe;
-}
+} */
 
 .produtos {
     margin-top: 40px;
@@ -241,7 +249,7 @@ td .fa-pencil-alt{
 }
 
 td .fa-dollar-sign{
-    color: #05974e;
+    color: rgb(5, 151, 78);
 }
 /*****/
 /** Editar Produto **/
@@ -345,4 +353,21 @@ form {
     margin-bottom: 20px;
     text-align: center;
     padding: 20px 0;
+}
+
+/** Grafico **/
+.grafico {
+    width: 100%;
+}
+
+.grafico canvas {
+    width: 100%;
+}
+
+.grafico h3 {
+    padding: 0 0 15px 0;
+}
+
+.grafico {
+    padding: 30px 0 50px 0;
 }

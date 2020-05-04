@@ -25,6 +25,10 @@
                 <p>Total Vendido:<br><b><?php echo 'R$ '.number_format($totalVendido, 2, ',', '.') ?></b></p>
             </div><!--box-->
         </div><!--box-wrapper-->
+        <div class="grafico">
+            <h3 class="titulo text-center">Vendas por Mês</h3>
+            <canvas id="myChart"></canvas>
+        </div><!--grafico-->
         <table>
             <thead>
                 <tr>

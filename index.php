@@ -28,5 +28,7 @@
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.maskMoney.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/financeiroCliente.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/functions.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/chart.min.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/grafico.js"></script>
 </body>
 </html>

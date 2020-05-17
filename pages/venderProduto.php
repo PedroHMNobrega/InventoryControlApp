@@ -6,8 +6,10 @@
             if($_POST['quantidade'] > $produto['quantidade']) 
                 Painel::alert('erro', 'Quantidade Adicionada Maior que o Estoque. Tente Novamente.');
             else {
-                $_POST['valor'] = preg_replace('/[.R$]/', '', $_POST['valor']);
-                $_POST['valor'] = (double)str_replace(',', '.', $_POST['valor']);
+                if($_POST['valor'][0] == 'R') {
+                    $_POST['valor'] = preg_replace('/[.R$]/', '', $_POST['valor']);
+                    $_POST['valor'] = (double)str_replace(',', '.', $_POST['valor']);
+                }
                 $_POST['valor'] *= $_POST['quantidade'];
                 $_POST['data'] = date('Y-m-d');
                 if(DataBase::adicionar($_POST, 'tb_admin.vendas')) {

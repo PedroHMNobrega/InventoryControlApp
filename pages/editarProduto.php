@@ -3,8 +3,10 @@
         $id = $_GET['id'];
         $produto = DataBase::select($id, 'tb_admin.estoque');
         if(isset($_POST['acao'])) {
-            $_POST['valor'] = preg_replace('/[.R$]/', '', $_POST['valor']);
-            $_POST['valor'] = (double)str_replace(',', '.', $_POST['valor']);
+            if($_POST['valor'][0] == 'R') {
+                $_POST['valor'] = preg_replace('/[.R$]/', '', $_POST['valor']);
+                $_POST['valor'] = (double)str_replace(',', '.', $_POST['valor']);
+            }
             $img = $_FILES['img'];
             $imgAtual = $produto['img'];
             $_POST['img'] = $imgAtual;
